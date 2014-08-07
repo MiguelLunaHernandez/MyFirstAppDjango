@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %} Lista de Productos {% endblock %}
+{% block content %}
+	<h1> {{ producto.nombre }} </h1>
+	<img src="/media/{{ producto.imagen }}" with="150px" heigth="150px" />
+	<p> {{  producto.descripcion }} </p>
+	<p> $ {{  producto.precio }} </p>
+	<p> Cantidad en Existencia: {{  producto.stock }} Unidades </p>
+
+	<br>
+	<h5>Categorias:</h5>
+
+	{% for cat in categorias %}
+		<span class="label label-info">{{ cat.nombre }}</span>
+	{% endfor %}
+	<br> <br> 
+	
+	{% if producto.stock > 0 %}
+		<a href="#" class="btn btn-primary">Comprar Producto</a>
+	{% endif %}
+
+	
+
+	<a href="javascript:window.history.go(-1);" class="btn btn-primary">Regresar a la lista</a>
+
+
+{% endblock%}
