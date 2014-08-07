@@ -192,8 +192,8 @@ LOGGING = {
 #Configuracion de correo gmail
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'example@gmail.com' #correo electronico al cual recivira los email
-EMAIL_HOST_PASSWORD = 'password' #contraseña del correo electronico
+EMAIL_HOST_USER = 'miguel.isel17@gmail.com' #correo electronico al cual recivira los email
+EMAIL_HOST_PASSWORD = 'noroyshii171513' #contraseña del correo electronico
 EMAIL_USE_TLS = True
 
 
